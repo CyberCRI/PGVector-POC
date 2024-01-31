@@ -11,7 +11,7 @@ print(vector)
 doc_vectors = embeddings.embed_documents([t.page_content for t in texts[:5]])
 print(doc_vectors)
 """
-loader = TextLoader('st.txt', encoding='utf-8')
+loader = TextLoader('sample.txt', encoding='utf-8')
 documents = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=80)
 texts = text_splitter.split_documents(documents)
